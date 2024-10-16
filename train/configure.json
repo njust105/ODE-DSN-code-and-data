@@ -1,0 +1,40 @@
+{
+    "model": {
+        "gru": {
+            "hidden_size": 30,
+            "input_size": 19,
+            "num_layers": 1
+        },
+        "ode": {
+            "integration_method": "RK2",
+            "steps": 7,
+            "num_layers": 10
+        },
+        "input_output": {
+            "dim": 3,
+            "input_layers": 1,
+            "output_layers": 2,
+            "jacobian_sym": false
+        }
+    },
+    "training": {
+        "learning_rate": 0.002,
+        "weight_decay": 1.099502990063743e-06,
+        "batch_size": 140,
+        "epochs": 2000,
+        "decay_rate": 0.8,
+        "decay_step": 100,
+        "dataset_directory": {
+            "training": "train_data",
+            "validation": "val_data"
+        },
+        "min_length": 50,
+        "save_interval": 10,
+        "save_directory": "astress"
+    },
+    "scaling": {
+        "E": 0.44544954637065,
+        "S": 7208.2426358468,
+        "E_dot": 18665.14088557391
+    }
+}
