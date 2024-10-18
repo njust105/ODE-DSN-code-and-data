@@ -3,7 +3,7 @@ import optuna
 import contextlib
 import sys
 # fmt: off
-sys.path.append('../gru/build/release')
+sys.path.append('../train/build/release')
 import optim_module
 # fmt: on
 
